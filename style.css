@@ -1,4 +1,4 @@
-/* --- Root Variables --- */
+
 :root {
     --gold: #c5a059;
     --dark: #0a0a0a;
@@ -9,7 +9,6 @@
 
 
 
-/* --- Global Settings --- */
 * { margin: 0; padding: 0; box-sizing: border-box; cursor: none; }
 body { 
     transition: background-color 1.2s cubic-bezier(0.19, 1, 0.22, 1), color 1.2s ease;
@@ -21,13 +20,12 @@ body {
 
 
 
-/* Dynamic Colors */
+
 body.white { background-color:#355c7d; color: var(--light); }
 body.dark { background-color: var(--dark); color: var(--light); }
 body.gold { background-color: var(--gold); color: #fff; }
 
 
-/* Custom Cursor */
 .cursor { 
     width: 12px; height: 12px; background: currentColor; 
     border-radius: 50%; position: fixed; pointer-events: none; 
@@ -35,30 +33,28 @@ body.gold { background-color: var(--gold); color: #fff; }
     mix-blend-mode: difference;
 }
 
-/* --- Navigation --- */
+
 .main-nav { position: fixed; top: 0; width: 100%; z-index: 1000; padding: 40px 80px; transition: 0.5s; }
 .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1600px; margin: 0 auto; }
 .logo { font-weight: 800; letter-spacing: 6px; font-size: 1.2rem; }
 .nav-links { display: flex; list-style: none; gap: 40px; }
 .nav-links a { color: currentColor; text-decoration: none; font-size: 10px; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; }
 
-/* --- Sections Styling --- */
+
 section { padding: 180px 0; min-height: 100vh; position: relative; }
 .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
 .section-tag { font-size: 10px; letter-spacing: 5px; color: var(--gold); margin-bottom: 30px; }
 
-/* Hero */
 .hero-inner { text-align: center; }
 .hero h1 { font-family: 'Playfair Display', serif; font-size: 10vw; line-height: 0.9; margin: 0; }
 .hero p { max-width: 600px; margin: 40px auto; font-size: 1.1rem; opacity: 0.7; }
 
-/* Philosophy Grid */
+
 .philosophy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
 .phil-text h3 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 30px; }
 .phil-text p { font-size: 1.2rem; margin-bottom: 20px; color: rgba(255,255,255,0.6); }
 .phil-image img { width: 100%; height: 600px; object-fit: cover; }
 
-/* Services Detailed Grid */
 .services-detailed-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 60px; }
 .svc-card { padding: 60px 40px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.02); transition: 0.5s; }
 .svc-card:hover { transform: translateY(-15px); border-color: #fff; background: rgba(255,255,255,0.05); }
@@ -67,13 +63,12 @@ section { padding: 180px 0; min-height: 100vh; position: relative; }
 .svc-list { list-style: none; margin-top: 30px; }
 .svc-list li { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; color: var(--light); }
 
-/* Projects */
 .project-large { display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; align-items: center; margin-top: 100px; }
 .proj-img img { width: 100%; height: 700px; object-fit: cover; border-radius: 4px; }
 .proj-info h3 { font-family: 'Playfair Display', serif; font-size: 4rem; margin-bottom: 20px; }
 .view-btn { display: inline-block; margin-top: 30px; padding: 15px 40px; border: 1px solid currentColor; text-decoration: none; color: inherit; font-size: 10px; letter-spacing: 3px; font-weight: 700; }
 
-/* FAQ */
+
 .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 80px; }
 .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 30px; }
 .faq-item h5 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px; }
@@ -83,17 +78,17 @@ section { padding: 180px 0; min-height: 100vh; position: relative; }
 .contact-left h1 { font-family: 'Playfair Display', serif; font-size: 6rem; line-height: 1; }
 .contact-left h1 span { color: #fff; font-style: italic; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-input, textarea { width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.2); padding: 25px 0; color: #fff; margin-bottom: 30px; outline: none; transition: 0.3s; }
+input, textarea { width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(10, 10, 10, 0.2); padding: 25px 0; color: #fff; margin-bottom: 30px; outline: none; transition: 0.3s; }
 input:focus { border-bottom-color: #fff; }
 button { background: #fff; color: #000; border: none; padding: 20px 60px; font-weight: 800; cursor: none; letter-spacing: 2px; }
 
 /* iPhone Optimization */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .main-nav { padding: 20px; }
     .hero h1 { font-size: 15vw; }
     .philosophy-grid, .services-detailed-grid, .project-large, .faq-grid, .contact-grid, .form-row { grid-template-columns: 1fr; gap: 40px; }
     .desktop-nav { display: none; }
-} */
+} 
 
 /* Animations State */
 .reveal { opacity: 0; transform: translateY(60px); transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1); }
@@ -251,13 +246,11 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
     margin-right: 20px;
 }
 
-/* Responsive iPhone */
-/* --- Sabse pehle ye line check karein ke HTML <head> mein maujood ho --- */
-/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
 
 @media (max-width: 768px) {
     
-    /* 1. Global Reset: Taake horizontal scrolling khatam ho jaye */
+    
     html, body {
         overflow-x: hidden !important;
         width: 100% !important;
