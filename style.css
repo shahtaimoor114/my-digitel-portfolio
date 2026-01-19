@@ -68,12 +68,12 @@ section { padding: 180px 0; min-height: 100vh; position: relative; }
 .proj-info h3 { font-family: 'Playfair Display', serif; font-size: 4rem; margin-bottom: 20px; }
 .view-btn { display: inline-block; margin-top: 30px; padding: 15px 40px; border: 1px solid currentColor; text-decoration: none; color: inherit; font-size: 10px; letter-spacing: 3px; font-weight: 700; }
 
-/* FAQ */
+
 .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 80px; }
 .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 30px; }
 .faq-item h5 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px; }
 
-/* Contact Form */
+
 .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 100px; }
 .contact-left h1 { font-family: 'Playfair Display', serif; font-size: 6rem; line-height: 1; }
 .contact-left h1 span { color: #fff; font-style: italic; }
@@ -82,7 +82,7 @@ input, textarea { width: 100%; background: transparent; border: none; border-bot
 input:focus { border-bottom-color: #fff; }
 button { background: #fff; color: #000; border: none; padding: 20px 60px; font-weight: 800; cursor: none; letter-spacing: 2px; }
 
-/* iPhone Optimization */
+
 @media (max-width: 768px) {
     .main-nav { padding: 20px; }
     .hero h1 { font-size: 15vw; }
@@ -90,11 +90,11 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
     .desktop-nav { display: none; }
 } 
 
-/* Animations State */
+
 .reveal { opacity: 0; transform: translateY(60px); transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1); }
 .reveal.active { opacity: 1; transform: translateY(0); }
 
-/* --- MEGA FOOTER CSS --- */
+
 .mega-footer {
     background: #080808;
     color: #fff;
@@ -108,7 +108,7 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
     padding: 0 40px;
 }
 
-/* Footer Top: CTA */
+
 .footer-top {
     text-align: center;
     padding-bottom: 80px;
@@ -146,7 +146,7 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
     transform: scale(1.1);
 }
 
-/* Footer Middle: Columns */
+
 .footer-middle {
     display: grid;
     grid-template-columns: 1.5fr 0.8fr 0.8fr 1.2fr;
@@ -204,7 +204,7 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
 
 .footer-links a:hover { color: #fff; padding-left: 10px; }
 
-/* Newsletter Form */
+
 .footer-form {
     display: flex;
     border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -228,7 +228,7 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
     cursor: none;
 }
 
-/* Footer Bottom */
+
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -261,9 +261,9 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
         width: 100% !important;
     }
 
-    /* 2. Navbar & Toggle Layout */
+   
     .nav-links {
-        display: none; /* Default hide */
+        display: none; 
         flex-direction: column;
         position: fixed;
         top: 0;
@@ -277,7 +277,7 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
     }
 
     .nav-links.active {
-        display: flex; /* Toggle click par show hoga */
+        display: flex; 
     }
 
     .menu-icon {
@@ -286,7 +286,7 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
         position: relative;
     }
 
-    /* 3. Headings & Typography: Sizes ko balance kiya hai */
+   
     h1, .hero-title, .footer-big-text {
         font-size: 2.2rem !important; 
         line-height: 1.1 !important;
@@ -297,7 +297,7 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
     h2 { font-size: 1.8rem !important; }
     p { font-size: 1rem !important; line-height: 1.6; }
 
-    /* 4. Portfolio Circle Image Section (Center Alignment) */
+    
     .project-large.reveal {
         flex-direction: column !important;
         padding: 40px 20px !important;
@@ -307,15 +307,15 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
     .proj-img img {
         width: 280px !important;
         height: 280px !important;
-        border-radius: 50% !important; /* Perfect Circle */
+        border-radius: 50% !important;
         object-fit: cover;
         margin: 0 auto 30px !important;
         display: block;
     }
 
-    /* 5. Services/Expertise Grid (Cards Fix) */
+    
     .services-detailed-grid {
-        grid-template-columns: 1fr !important; /* Laptop par jo grid tha ab 1 column hai */
+        grid-template-columns: 1fr !important; 
         padding: 20px !important;
         gap: 20px;
     }
@@ -325,13 +325,13 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
         padding: 20px !important;
     }
 
-    /* 6. MEGA FOOTER: Mukammal Responsive */
+   
     .mega-footer {
         padding: 60px 20px !important;
     }
 
     .footer-container {
-        flex-direction: column !important; /* 4 columns ko vertical kar diya */
+        flex-direction: column !important; 
         gap: 40px;
         text-align: left;
     }
@@ -346,7 +346,7 @@ button { background: #fff; color: #000; border: none; padding: 20px 60px; font-w
         margin-bottom: 20px;
     }
 
-    /* 7. Contact Form Fix */
+ 
     .contact-form-section input, 
     .contact-form-section textarea {
         width: 100% !important;

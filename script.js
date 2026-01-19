@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Initialize Locomotive Scroll
+    
     const scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lerp: 0.018
     });
 
-    // 2. Custom Cursor with Scale Effect
+    
     const cursor = document.querySelector('.cursor');
     document.addEventListener('mousemove', (e) => {
         cursor.style.left = e.clientX + 'px';
@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         el.addEventListener('mouseleave', () => cursor.style.transform = 'scale(1)');
     });
 
-    // 3. Dynamic Background Color Control
     scroll.on('scroll', () => {
         const sections = document.querySelectorAll('section');
         sections.forEach(section => {
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Smooth Reveal Observer
+   
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -43,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // 5. Custom Loader Effect
+   
     window.onload = () => {
         setTimeout(() => {
             document.querySelector('.loader-overlay').style.opacity = '0';
@@ -55,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Footer Live Clock Logic
+
 function updateTime() {
     const timeDisplay = document.getElementById('time-display');
     if (timeDisplay) {
@@ -67,7 +66,7 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
-// Magnetic Button Effect (High-Level UI)
+
 const magBtn = document.querySelector('.magnetic-btn');
 if(magBtn) {
     magBtn.addEventListener('mousemove', (e) => {
@@ -82,18 +81,18 @@ if(magBtn) {
     });
 }
 
-// Footer Cursor Color Change Logic
+
 const footerElement = document.querySelector('.mega-footer'); 
 const cursorDot = document.querySelector('.cursor');
 
 if (footerElement && cursorDot) {
-    // Jab mouse footer ke dark area mein dakhil ho
+   
     footerElement.addEventListener('mouseenter', () => {
         cursorDot.style.backgroundColor = "#353434"; 
-        // cursorDot.style.mixBlendMode = "normal";    
+       
     });
 
-    // Jab mouse footer se wapas upar jaye
+    
     footerElement.addEventListener('mouseleave', () => {
         cursorDot.style.backgroundColor = "var(--light)"; 
         cursorDot.style.mixBlendMode = "difference";     
@@ -103,7 +102,7 @@ function toggleMenu() {
     const nav = document.getElementById("navlinks");
     nav.classList.toggle("active");
     
-    // Body scroll lock (Optional: Taake menu ke peeche scroll na ho)
+    
     if(nav.classList.contains("active")) {
         document.body.style.overflow = "hidden";
     } else {
