@@ -18,9 +18,6 @@ body {
 }
 
 
-
-
-
 body.white { background-color:#355c7d; color: var(--light); }
 body.dark { background-color: var(--dark); color: var(--light); }
 body.gold { background-color: var(--gold); color: #fff; }
